@@ -2,6 +2,7 @@
 
 from https://github.com/killinux/mame
 
+
 1.环境：我的wasm在 /opt/work/emsdk 
 
 cd emsdk

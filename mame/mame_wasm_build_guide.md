@@ -2,7 +2,7 @@
 
 > 适用系统：CentOS 8 / Rocky Linux  
 > 目标：将 MAME 编译为可在浏览器中运行的 WebAssembly
-
+> 使用代码 https://github.com/killinux/mame/ 和 https://github.com/killinux/emularity
 ---
 
 ## 环境准备
