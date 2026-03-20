@@ -43,7 +43,7 @@ emmake make \
   SUBTARGET=psikyo \
   SOURCES=src/mame/psikyo/psikyo.cpp \
   REGENIE=1 \
-  -j$(nproc)
+  -je
 ```
 
 编译成功后生成：
