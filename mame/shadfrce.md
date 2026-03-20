@@ -1,5 +1,17 @@
 现在写总结文档：
 
+编译的时候使用
+
+cd /opt/workspace/mame
+
+# 编译 shadfrce（用 REGENIE=1 应用新的 genie.lua 配置）
+emmake make SUBTARGET=shadfrce SOURCES=src/mame/technos/shadfrce.cpp REGENIE=1 -j$(sysctl -n hw.logicalcpu)
+
+# 之后编译其他游戏就不需要 REGENIE=1 了（genie.lua 只改一次）
+emmake make SUBTARGET=psikyo SOURCES=src/mame/psikyo/psikyo.cpp -j$(sysctl -n hw.logicalcpu)
+
+
+
 ---
 
 # Shadow Force (shadfrce) 浏览器模拟器配置总结
