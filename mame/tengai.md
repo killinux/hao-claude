@@ -1,5 +1,21 @@
 # tengai (战国之刃) 浏览器模拟器修复总结
 
+from https://github.com/killinux/mame
+
+1.环境：我的wasm在 /opt/work/emsdk 
+
+cd emsdk
+
+./emsdk activate 3.1.50
+
+source ./emsdk_env.sh
+
+2.项目路径：/opt/work/mame
+
+3.需求：
+emmake make SUBTARGET=psikyo SOURCES=src/mame/psikyo/psikyo.cpp
+
+
 ## 问题描述
 
 在浏览器中运行 MAME WebAssembly 版本的《战国之刃 (Sengoku Blade / Tengai)》时，游戏卡在加载界面，控制台持续输出 `Aborted()` 错误。
